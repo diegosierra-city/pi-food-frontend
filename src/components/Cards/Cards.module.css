@@ -1,0 +1,26 @@
+.cards{
+ display: grid; justify-content: center; align-items: center; justify-items: center;
+ grid-template-columns: 1fr 1fr 1fr ; 
+ width: 90vw;
+ max-width: 1200px;
+ margin: 0 auto;
+}
+
+
+
+
+
+ @media screen and (min-width: 971px) and (max-width: 1200px) {
+ .cards{grid-template-columns: 1fr 1fr ; }
+ 
+}
+
+@media screen and (min-width: 691px) and (max-width: 970px) {
+ .cards{grid-template-columns: 1fr 1fr; }
+ 
+}
+
+@media screen and (max-width: 690px) {
+ .cards{grid-template-columns: 1fr; }
+ 
+}

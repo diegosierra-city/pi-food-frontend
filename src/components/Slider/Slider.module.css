@@ -1,0 +1,23 @@
+.slideZone {
+ position: absolute;
+ top:0;
+ bottom: 0; 
+ left: 0;
+ right: 0; 
+ overflow: hidden;
+ transition: 600ms all ease;
+}
+
+.slideZone img{
+ height: 100vh; width: auto; min-width: 100vw; transition: 600ms all ease;
+}
+
+.img01{position: absolute; z-index: 5; right:0px; width: 100vw; height: 100vh; overflow: hidden; transition: 600ms all ease;}
+.img02{position: absolute; z-index: 4; right:0px; width: 100vw; height: 100vh; overflow: hidden; transition: 600ms all ease;}
+.img03{position: absolute; z-index: 3; right:0px; width: 100vw; height: 100vh; overflow: hidden; transition: 600ms all ease;}
+.img04{position: absolute; z-index: 2; right:0px; width: 100vw; height: 100vh; overflow: hidden; transition: 600ms all ease;}
+.img05{position: absolute; z-index: 1; right:0px; width: 100vw; height: 100vh; overflow: hidden; transition: 600ms all ease;}
+
+.deslizar{margin-right:100vw;}
+.normal{margin-right:0vw;}
+

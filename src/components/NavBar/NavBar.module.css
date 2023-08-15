@@ -1,0 +1,47 @@
+.header{
+ background: linear-gradient(to right, DimGrey, black) ;
+ color:white; height: 50px;  margin-bottom: 0px;
+  border-bottom: solid 2px black;
+
+  display: flex;
+  flex-wrap: wrap;
+  border-bottom: dotted 1px red; position: fixed; top:0; left: 0; right: 0; z-index: 2;
+}
+.col {
+ flex: 1;
+}
+
+.logo{position: relative; margin-top: 8px; margin-left: 8px; width: 120px; background-color: white; padding: 8px;
+border-radius: 10px; box-shadow: 2px 2px 4px black;
+}
+.logout{
+ position: absolute;
+ top:20px;
+ right: 20px; 
+ cursor:pointer
+ 
+}
+.menu{height: 50px; display:flex; align-items: center; justify-content: center;  transition: 600ms all ease;}
+
+
+
+
+@media screen and (max-width: 950px) {
+ 
+/*  .header {
+  display:grid; grid-template-columns: 1fr 1fr; gap: 0; height: 150px;
+  
+}
+.header img{position: absolute; top:30px}
+
+.col:first-child {
+  order: 1;
+}
+.col:nth-child(2) {
+  order: 0;
+}
+.col:last-child {
+  order: 2;
+} */
+ 
+}

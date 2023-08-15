@@ -1,0 +1,23 @@
+.slide{
+ position: absolute; 
+ top:0;
+ bottom: 0; 
+ left: 0;
+ right: 0; 
+ overflow: hidden; 
+ display: flex; 
+ align-content: center; 
+ align-items: center; 
+ justify-content: center;
+}
+
+.btn_start{
+z-index: 10;
+padding: 10px;
+border-radius: 10px;
+background-color: rgba(255,255,255,0.6);
+cursor:pointer
+}
+
+.welcome{text-align: center; background-color: dimgray; padding:8px; font-weight: bold; cursor: pointer;}
+.welcome:hover{background-color: black;}

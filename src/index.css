@@ -1,0 +1,89 @@
+/*
+font-family: 'Allison', cursive;
+font-family: 'Dosis', sans-serif; /// texto corrido
+font-family: 'Josefin Sans', sans-serif; //puntiaguda
+font-family: 'Square Peg', cursive; //titulos
+*/
+body{
+ font-family: 'Dosis', sans-serif; 
+ font-size: 18px;
+ padding: 0px !important; 
+ margin: 0px !important;
+ background-color: black;
+ color: Gainsboro; min-height: 100vh;
+ width: 100vw;
+ overflow-y: auto;
+ overflow-x: hidden;
+}
+html {
+ scroll-behavior: smooth;
+}
+.App{padding:0px;}
+.image-page{ position: relative; width: 100vw; height: 15vw; overflow: hidden; border:solid 1px red}
+.image-page img{height: 100%; width: auto; min-width: 100vw;}
+
+h2{font-family: 'Square Peg', cursive; font-size:40px; margin:0; color: red; line-height: 1;}
+.text-white{color:white}
+.text-center{text-align: center;}
+.right{text-align: right; justify-content: right;}
+.boton-principal{ background-color: red; border:solid 1px black; border-radius: 8px; margin-left: 4px; margin-right: 4px; color:Gainsboro; padding: 4px 10px; cursor:pointer;  transition: 600ms all ease; white-space:nowrap;}
+.boton-principal:hover{background-color: black; color:red}
+input,select, textarea{background-color: black; color:white; border:solid 1px rgb(78, 78, 78); border-radius: 8px; margin-left: 4px; margin-right: 4px; padding: 8px 10px;  transition: 600ms all ease; font-size: 15px;}
+select optgroup{border:0}
+
+/* Estilo base del checkbox */
+input[type="checkbox"] {
+ /* Puedes ajustar los estilos según tus preferencias */
+ margin-right: 10px;
+}
+
+/* Cambio de estilo cuando el checkbox está marcado */
+input[type="checkbox"]:checked {
+ border-color: green; /* Por ejemplo, cambiar el borde cuando está marcado */
+}
+
+/* Estilo del indicador del checkbox (el checkmark) */
+input[type="checkbox"]::before {
+ content: "\2713"; /* Símbolo de checkmark Unicode */
+ display: inline-block;
+ width: 18px;
+ height: 18px;
+ text-align: center;
+ border: 1px solid #ccc;
+ border-radius: 3px;
+ background-color: #fff;
+ margin-right: 5px;
+ font-size: 14px;
+ line-height: 18px;
+ color: transparent; /* Ocultar el checkmark por defecto */
+}
+
+/* Cambio de estilo del checkmark cuando el checkbox está marcado */
+input[type="checkbox"]:checked::before {
+ color: green; /* Cambiar el color del checkmark cuando está marcado */
+ border-color: green;
+ background-color: white; /* Cambiar el fondo cuando está marcado */
+}
+
+a{text-decoration: none; color: yellow}
+
+.App{min-height: 100vh; position: relative; }
+.page{padding-bottom: 150px;}
+
+.danger{color:red; font-size: 12px;}
+.warning{border:solid 1px red}
+.w-full{width: 100%;}
+.w-90{width: 90%;}
+.w-80{width: 80%;}
+.w-50{width: 50%;}
+.w-30{width: 30%;}
+
+@media screen and (max-width: 950px) {
+ .image-page{height: 25vw;}
+}
+@media screen and (max-width: 690px) {
+.image-page{height: 35vw;}
+.page{padding-bottom: 250px;}
+}
+
+

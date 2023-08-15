@@ -1,0 +1,11 @@
+.zona{
+ display: flex;
+ flex-wrap: nowrap;
+}
+
+@media screen and (max-width: 690px) {
+.zona{
+ flex-wrap: wrap;
+ justify-items: center; align-items: center; justify-content: center;
+}
+}
