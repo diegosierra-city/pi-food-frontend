@@ -72,7 +72,7 @@ if (inputs.password.length < 6) {
     //alert("Datos completos");
 
     try {
-     let response = await  axios.post(`http://localhost:3001/user/${typeFrorm}`,inputs)
+     let response = await  axios.post(`https://backend-pi-soy-henry.onrender.com/user/${typeFrorm}`,inputs)
       let data = response.data
       //console.log('dataAction',data)
       saveCookie('user', JSON.stringify(data), 8)//8horas
