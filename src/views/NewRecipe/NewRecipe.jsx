@@ -24,7 +24,7 @@ export default function NewRecipe(props) {
  return (
   <div className="page">
    <div className="image-page">
-        <img src="../src/assets/pages/NewRecipe.jpg" alt="" />
+        <img src="/images/pages/NewRecipe.jpg" alt="" />
       </div>
 
 {session? <div className={styles.zona_formulario}>

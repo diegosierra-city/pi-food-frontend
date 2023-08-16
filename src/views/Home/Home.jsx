@@ -122,7 +122,7 @@ export default function Home() {
   return (
     <div className="page">
       <div className="image-page">
-        <img src="../src/assets/pages/Home.jpg" alt="" />
+        <img src="/images/pages/Home.jpg" alt="" />
       </div>
 
       <div className={styles.filtros}>

@@ -5,11 +5,11 @@ export default function Footer(props) {
   <div className={styles.footer}>
    <div className={styles.footer_cont}>
     <div>
-    <img src="../src/assets/logoCommunityCooks120.png" alt="" />
+    <img src="/images/logoCommunityCooks120.png" alt="" />
     </div>
     <div>
      Power By: <br />
-    <img src="../src/assets/logoSpoonacular.png" alt="" />
+    <img src="/images/logoSpoonacular.png" alt="" />
     </div>
    </div>
     <div className="text-center"><small>Diego Sierra 2023</small></div>

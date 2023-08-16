@@ -10,7 +10,7 @@ return(
 
 <div className={`${styles.col}`}>
   <div className={styles.logo}>
-<img src="../src/assets/logoCommunityCooks120.png" alt="" />
+<img src="/images/logoCommunityCooks120.png" alt="" />
   </div>
   </div>
   
@@ -47,7 +47,7 @@ export default function NavBar(props) {
     <nav>
    <ul>
       <li>
-         <img src="../src/assets/logo.png" alt="" className={styles.logo} />
+         <img src="/images/logo.png" alt="" className={styles.logo} />
       </li>
 <Link to="/home"><li>Home</li></Link>
 <Link to="/about"><li>About</li></Link>

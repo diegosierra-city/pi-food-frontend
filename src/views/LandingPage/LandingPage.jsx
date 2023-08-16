@@ -20,7 +20,7 @@ export default function LandingPage(props) {
    
     <div className={styles.btn_start}>
       <Link to={'/home'}>
-      <img src="./src/assets/logoCommunityCooks400.png" alt=""   />
+      <img src="/images/logoCommunityCooks400.png" alt=""   />
       <div className={styles.welcome}>Welcome</div>
       </Link>
     </div>
