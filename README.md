@@ -5,14 +5,14 @@ Aplicación Frontend de Proyecto Individual para la Carrera Fullstack en Soy Hen
 ## Tabla de Contenidos
 
 - [Descripción](#descripción)
-- [Captura de Pantalla](#capturas-de-pantalla)
+- [Captura de Pantalla](#captura-de-pantalla)
 
 
 ## Descripción
 
-Apliación en React sobre Vite, usuando Redux
+Apliación en React sobre Vite, usando Redux
 
-## Capturas de Pantalla
+## Captura de Pantalla
 
 ![CommunityCooksScreen](./public/CommunityCooksScreenshot_1.png)
 
