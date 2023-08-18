@@ -16,7 +16,11 @@ z-index: 10;
 padding: 10px;
 border-radius: 10px;
 background-color: rgba(255,255,255,0.6);
-cursor:pointer
+cursor:pointer; 
+width: 80vw; max-width: 400px;
+}
+.btn_start img{
+ width: 100%; height: auto;
 }
 
 .welcome{text-align: center; background-color: dimgray; padding:8px; font-weight: bold; cursor: pointer;}

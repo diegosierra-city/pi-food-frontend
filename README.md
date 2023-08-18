@@ -1,9 +1,18 @@
-# React + Vite
+# Community Cooks
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicación Frontend de Proyecto Individual para la Carrera Fullstack en Soy Henry.
 
-Currently, two official plugins are available:
+## Tabla de Contenidos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-"# pi-food-frontend" 
+- [Descripción](#descripción)
+- [Captura de Pantalla](#capturas-de-pantalla)
+
+
+## Descripción
+
+Apliación en React sobre Vite, usuando Redux
+
+## Capturas de Pantalla
+
+![CommunityCooksScreen](./public/CommunityCooksScreenshot_1.png)
+
