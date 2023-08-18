@@ -9,7 +9,7 @@ export default function FormRecipe({setSession}) {
   let diets = useSelector((state) => state.diets);
 
   const user = JSON.parse(getCookie('user'))
-console.log('USERRR',user)
+//console.log('USERRR',user)
 
   //console.log('Form',diets)
   const validate = (inputs) => {
@@ -123,7 +123,7 @@ console.log('USERRR',user)
         diets: [],
       });
     } catch (error) {
-      console.log("Error al agregar la receta:", error);
+      alert("Error al agregar la receta:"+ error);
     }
   };
 
@@ -161,10 +161,7 @@ console.log('USERRR',user)
   }
 
   useEffect(() => {
-    //console.log('dispatch-diets')
-    dispatch(getAllDiets()).catch((error) => {
-      console.error("Error al obtener las dietas:", error);
-    });
+  dispatch(getAllDiets())
   }, []);
 
   

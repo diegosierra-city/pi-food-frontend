@@ -65,19 +65,23 @@ input[type="checkbox"]:checked::before {
  background-color: white; /* Cambiar el fondo cuando está marcado */
 }
 
-a{text-decoration: none; color: yellow}
+a{text-decoration: none; color: red}
 
 .App{min-height: 100vh; position: relative; }
 .page{padding-bottom: 150px;}
-
+.sup{position:absolute; z-index:10; border:solid 1px red}
 .danger{color:red; font-size: 12px;}
 .warning{border:solid 1px red}
+.z-1{position:absolute;z-index: 1;}
+.z-2{position:absolute;z-index: 2;}
+.z-3{position:absolute;z-index: 3;}
+.z-4{position:absolute;z-index: 4;}
 .w-full{width: 100%;}
 .w-90{width: 90%;}
 .w-80{width: 80%;}
 .w-50{width: 50%;}
 .w-30{width: 30%;}
-
+.w-5{width: 5%;}
 @media screen and (max-width: 950px) {
  .image-page{height: 25vw;}
 }

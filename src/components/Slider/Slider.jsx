@@ -4,42 +4,40 @@ import { useState, useEffect } from "react";
 export default function Slider(props) {
 const [slide, setSlide] = useState(0);
 
-  function playSlider(){
-    let newStep=slide+1
-    if(newStep>4) newStep=0
-    setSlide(newStep)
-    console.log('Paso',newStep,slide)
-  }
 
-  useEffect(() => {
-   //setInterval(playSlider, 10000);
+
+  
+  useEffect(()=>{
+    const images = document.querySelectorAll(".image-container img");
+    let currentIndex = 0;
+  function changeImage() {
+    //console.log('play')
+    if(images[currentIndex]) images[currentIndex].style.opacity = 0;
+    currentIndex = (currentIndex + 1) % images.length;
+    if(images[currentIndex]) images[currentIndex].style.opacity = 1;
+  }
+  
+  // Cambiar la imagen cada 5 segundos
+  const interval = setInterval(changeImage, 5000);
+  
+  return () => {
+    clearInterval(interval);/// pare al salir
+  };
   },[])
+ 
 
   //setInterval(playSlider, 10000);
   return (
-    
-    <div className={styles.slideZone}>
-      {/* <div className={`${styles.img01} ${slide >= 1 ? styles.deslizar : styles.normal}`}>
-      <img src="/images/landing/bg01.jpg" alt="" id="img01" />
-      </div> */}
-
-      <div className={`${styles.img02} ${slide >= 2 ? styles.deslizar : styles.normal}`}>
-       <img src="/images/landing/bg02.jpg" alt=""/> 
-      </div>
-
-      <div className={`${styles.img03} ${slide >= 3 ? styles.deslizar : styles.normal}`}>
-      <img src="/images/landing/bg03.jpg" alt="" id="img03" />
-      </div>
-
-      <div className={`${styles.img04} ${slide >= 4 ? styles.deslizar : styles.normal}`}>
-      <img src="/images/landing/bg04.jpg" alt="" id="img04" />
-      </div>
-
-      {/* <div className={`${styles.img02} ${styles.normal}`}>
-      <img src="/images/landing/bg01.jpg" alt="" id="img05" />
-      </div> */}
-
+    <div>
+     <div className={`${styles.slideZone} image-container`}>
+      <img src="/images/landing/bg02.jpg?1" alt="" className="z-4"/>
+      <img src="/images/landing/bg01.jpg?1" alt="" className="z-3" />
+<img src="/images/landing/bg03.jpg?1" alt="" className="z-2" />
+      <img src="/images/landing/bg04.jpg?1" alt="" className="z-1" />
+   </div>
     </div>
+    
+   
 
   );
 }

@@ -42,7 +42,7 @@ export default function Home() {
     const end = init + recipesPerPage;
     pageRecipes = recipes?.slice(init, end);
     setRecipesPage(pageRecipes);
-    console.log("xx" + pag, pageRecipes);
+    //console.log("xx" + pag, pageRecipes);
     window.scrollTo({
       top: 0,
       behavior: "smooth", // Hace que el desplazamiento sea suave
@@ -64,7 +64,7 @@ export default function Home() {
       );
       setBtnPaginator(new_btnPaginator);
       paginator(nowPage);
-      console.log("qq", nowPage);
+      //console.log("qq", nowPage);
     }
   }, [recipes]);
 
@@ -161,6 +161,11 @@ export default function Home() {
       </div>
 
       <div className={styles.pages}>
+
+        {actualPage > 1 && <button            
+            onClick={() => paginator(actualPage-1)}
+          > prev </button>}
+
         {btnPaginator?.map((numeroPag, i) => (
           <button
             className={actualPage === numeroPag ? styles.active : null}
@@ -168,6 +173,11 @@ export default function Home() {
             onClick={() => paginator(numeroPag)}
           >{`${numeroPag}`}</button>
         ))}
+
+{btnPaginator?.length > 1 && actualPage < btnPaginator.length && (<button            
+            onClick={() => paginator(actualPage+1)}
+          > next </button>)}
+
       </div>
     </div>
   );

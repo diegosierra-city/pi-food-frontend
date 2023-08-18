@@ -104,7 +104,7 @@ let newRecipes
       } else {
         newRecipes = searchDiets([...state.allRecipes], action.payload);
       }
-      console.log("reducer-filter", action.payload, newRecipes);
+      //console.log("reducer-filter", action.payload, newRecipes);
 
       return {
         ...state,
@@ -133,7 +133,7 @@ let newRecipes
       } else {
         newRecipesO = searchOrigin([...state.allRecipes], action.payload);
       }
-      console.log("reducer-filter-origin", action.payload, newRecipesO);
+      //console.log("reducer-filter-origin", action.payload, newRecipesO);
 
       return {
         ...state,

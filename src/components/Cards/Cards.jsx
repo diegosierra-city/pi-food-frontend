@@ -3,7 +3,7 @@ import styles from './Cards.module.css';
 
 export default function Cards(props) {
    const { recipes, handleFilterDietCard} = props;
-   console.log('Cards',recipes)
+   //console.log('Cards',recipes)
    return <div className={styles.cards}>
     
 {recipes?.map((recipe,i) => {

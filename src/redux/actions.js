@@ -36,7 +36,7 @@ export const getAllRecipes = () => {
  //console.log('T',recipe)
 return async (dispatch) => {
  try {
-   let response = await  axios.get('https://backend-pi-soy-henry.onrender.com/recipes-all')
+   let response = await  axios.get('http://localhost:3001/recipes')
    let data = response.data
    //console.log('data',data)
    return dispatch({
@@ -52,10 +52,10 @@ return async (dispatch) => {
 };
 
 export const addRecipe = (recipe) => {
- console.log('T',recipe)
+ //console.log('T',recipe)
 return async () => {
  try {
-  let response = await axios.post(`https://backend-pi-soy-henry.onrender.com/recipes`,recipe)
+  let response = await axios.post(`http://localhost:3001/recipes`,recipe)
    let data = response.data
    //console.log('data',data)
    /* return dispatch({
@@ -75,7 +75,7 @@ export const getAllDiets = () => {
    //console.log('T',recipe)
   return async (dispatch) => {
    try {
-     let response = await  axios.get('https://backend-pi-soy-henry.onrender.com/diets')
+     let response = await  axios.get('http://localhost:3001/diets')
      let data = response.data
      //console.log('data',data)
      return dispatch({
@@ -94,13 +94,13 @@ export const searchRecipes = (name) => {
 return async (dispatch) => {
    //console.log('action',name)
  try {
-   let response = await axios(`https://backend-pi-soy-henry.onrender.com/recipes`,{
+   let response = await axios(`http://localhost:3001/recipes`,{
       params: {
         name: name
       }
     })
    let data = response.data
-   console.log('action data search',data)
+   //console.log('action data search',data)
    return dispatch({
     type: 'SEARCH_RECIPES',
     payload: data,
@@ -117,7 +117,7 @@ export const detailRecipe = (id) => {
    //console.log('T',recipe)
   return async (dispatch) => {
    try {
-     let response = await  axios.get(`https://backend-pi-soy-henry.onrender.com/recipes/${id}`)
+     let response = await  axios.get(`http://localhost:3001/recipes/${id}`)
      let data = response.data
      //console.log('dataAction',data)
      return dispatch({
@@ -178,7 +178,7 @@ export const filterRecipesOrigin = (origin) => {
          //console.log('T',recipe)
   return async () => {
     try {
-      let response = await  axios.post(`https://backend-pi-soy-henry.onrender.com/user/${type}`,user)
+      let response = await  axios.post(`http://localhost:3001/user/${type}`,user)
       let data = response.data
       //console.log('dataAction',data)
       saveCookie = ('user', data, 8)//8horas
@@ -194,7 +194,7 @@ export const filterRecipesOrigin = (origin) => {
  //console.log('T',recipe)
 return async (dispatch) => {
  try {
-   let response = await  axios.post('https://backend-pi-soy-henry.onrender.com/rickandmorty/fav', recipe)
+   let response = await  axios.post('http://localhost:3001/rickandmorty/fav', recipe)
    let data = response.data
    return dispatch({
     type: 'ADD_FAV',
@@ -221,7 +221,7 @@ payload: id
 export const removeFav = (id) => {
  return async (dispatch) => {
     try {
-       let response = await axios.delete(`https://backend-pi-soy-henry.onrender.com/rickandmorty/fav/${id}`)
+       let response = await axios.delete(`http://localhost:3001/rickandmorty/fav/${id}`)
        let data = response.data
        return dispatch({
           type: 'REMOVE_FAV',
@@ -239,7 +239,7 @@ export const removeFav = (id) => {
 /// redux y express
 export const allFav = () => {
 return (dispatch) => {
-  axios.get(`https://backend-pi-soy-henry.onrender.com/rickandmorty/fav`).then(({ data }) => {
+  axios.get(`http://localhost:3001/rickandmorty/fav`).then(({ data }) => {
      return dispatch({
         type: 'ALL_FAV',
         payload: data,

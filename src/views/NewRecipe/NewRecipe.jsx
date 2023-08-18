@@ -13,10 +13,10 @@ export default function NewRecipe(props) {
  useEffect(() => {
   // Verifica si la cookie "user" existe
   if (getCookie('user')) {
-    console.log('La cookie "user" existe.');
+    //console.log('La cookie "user" existe.');
     setSession(true);//true
   } else {
-    console.log('La cookie "user" no existe.');
+    //console.log('La cookie "user" no existe.');
     setSession(false);//false
   }
 }, []);

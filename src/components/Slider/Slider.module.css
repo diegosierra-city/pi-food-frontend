@@ -1,5 +1,5 @@
 .slideZone {
- position: absolute;
+ position: fixed;
  top:0;
  bottom: 0; 
  left: 0;
@@ -10,6 +10,7 @@
 
 .slideZone img{
  height: 100vh; width: auto; min-width: 100vw; transition: 600ms all ease;
+ position: absolute; right:0px;
 }
 
 .img01{position: absolute; z-index: 5; right:0px; width: 100vw; height: 100vh; overflow: hidden; transition: 600ms all ease;}
